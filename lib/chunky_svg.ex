@@ -7,7 +7,7 @@ defmodule ChunkySVG do
     _render(%{viewBox: "0 0 100 100", xmlns: "http://www.w3.org/2000/svg"}, drawing)
   end
 
-  def render(svg_attrs, drawing) when is_tuple(svg_attrs) and is_list(drawing) do
+  def render(svg_attrs, drawing) when is_map(svg_attrs) and is_list(drawing) do
     _render(svg_attrs, drawing)
   end
 
